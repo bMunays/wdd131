@@ -1,0 +1,85 @@
+/* variables */
+:root {
+    --font-size: 1.2rem;
+    --background-color: #0f172a;
+    --main-background-color: #f1f5f9;
+    --primary-font-color: #ffffff;
+    --secondary-font-color: #1e293b;
+    --nav-background: #1e3a8a;
+}
+
+/* reset and base styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--background-color);
+}
+
+/* header */
+header {
+    background-color: var(--background-color);
+    color: var(--primary-font-color);
+    padding: 0;
+    font-size: var(--font-size);
+}
+
+header h1 {
+    padding: 20px 20px 10px 20px;
+}
+
+/* navigation */
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none; /* remove bullets */
+    background-color: var(--nav-background);
+    padding: 15px 0;
+}
+
+.navigation a {
+    color: var(--primary-font-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* main */
+.container {
+    display: flex;
+    flex: 1;
+}
+
+main {
+    background-color: var(--main-background-color);
+    color: var(--secondary-font-color);
+    flex: 3; /* 75% */
+    padding: 20px;
+    font-size: var(--font-size);
+}
+
+/* sidebar */
+aside {
+    background-color: var(--primary-font-color);
+    color: var(--secondary-font-color);
+    flex: 1; /* 25% */ 
+    padding: 20px;
+    font-size: var(--font-size);
+}
+
+/* footer */
+footer {
+    background-color: var(--background-color);
+    color: var(--primary-font-color);
+    text-align: center;
+    padding: 30px;
+    font-size: var(--font-size);
+    margin-top: auto;
+}

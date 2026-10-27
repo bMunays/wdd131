@@ -1,16 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <meta name="author" content="Brighton Munezi">
+    <meta name="description" content ="WDD 131 – Dynamic Web Fundamentals, Brighton Munezi, Keyword Summary">
+
+    <title>WDD 131 – Dynamic Web Fundamentals – Brighton Munezi</title>
+
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <header></header>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" title="LinkedIn Profile">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" title="Canvas">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures" title="Scripture">Scripture</a></li>
+                <li><a href="#" title="Final Project">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <h1>WDD 131 Brighton Munezi</h1>
+        <h1>Brighton Munezi</h1>
+
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/profile.webp" alt="Profile Picture of Brighton Munezi" width="150" loading="lazy">
+            <p>Hello! I am a software development student with a passion for building interactive web and mobile applications.</p>
+        </section>
+
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a></li>
+                <li><a href="https://fonts.google.com/" target="_blank">Google Fonts API</a></li>
+                <li><a href="https://codepen.io/" target="_blank">CodePen</a></li>
+            </ul>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Brighton Munezi | Mutare, Zimbabwe</p>
+        
+        <p id="lastModified"></p>
+    </footer>
     
 </body>
 </html>
