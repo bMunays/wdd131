@@ -97,10 +97,10 @@ h1 {
 }
 
 .card {
-    background-color: white;
+    background-color: #fdfaf0;
     border: 1px solid #cccccc;
     border-radius: 8px;
-    padding: 1.5rem;
+    padding: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: block;
     overflow: hidden;
