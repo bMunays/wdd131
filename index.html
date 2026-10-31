@@ -8,6 +8,10 @@
 
     <title>WDD 131 – Dynamic Web Fundamentals – Brighton Munezi</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/base.css">
     <script src="scripts/getdates.js" defer></script>
 </head>
@@ -29,8 +33,20 @@
 
         <section class="card">
             <h2>About Me</h2>
-            <img src="images/profile.webp" alt="Profile Picture of Brighton Munezi" width="150" loading="lazy">
+            <img class="profile-pic" src="images/profile.webp" alt="Profile Picture of Brighton Munezi" width="150" loading="lazy">
             <p>Hello! I am a software development student with a passion for building interactive web and mobile applications.</p>
+            
+            <h3 class="location">Mutare, Zimbabwe</h3>
+            <hr>
+
+            <figure class="flag-box">
+                <img src="images/zimbabwe-flag.jpg" alt="Flag of Zimbabwe" width="150">
+                <figcaption>Official flag of Zimbabwe</figcaption>
+            </figure>
+            
+            <p>Mutare is a beautiful, mountainous city in eastern Zimbabwe, known for its scenic landscapes and vibrant community.
+            </p>
+
         </section>
 
         <section class="card">
@@ -43,7 +59,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy;<span id="currentyear"></span> | Brighton Munezi | Mutare, Zimbabwe</p>
+        <p>&copy;<span id="currentYear"></span> | Brighton Munezi | Mutare, Zimbabwe</p>
         
         <p id="lastModified"></p>
     </footer>

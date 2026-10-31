@@ -34,8 +34,9 @@ header {
     font-size: var(--font-size);
 }
 
-#course-title {
+header span#course-title {
     display: block;
+    text-align: center;
     font-size: 1.8rem;
     font-weight: 700;
     margin-bottom: 1rem;
@@ -71,7 +72,6 @@ nav a:hover {
 main {
     background-color: var(--main-background-color);
     color: var(--secondary-font-color);
-    padding: 20px;
     font-size: var(--font-size);
     padding: 0 1rem;
     display: grid;
@@ -81,7 +81,7 @@ main {
 
 @media (min-width: 760px) {
     main {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr 1fr;
     }
 
     h1 {
@@ -102,25 +102,64 @@ h1 {
     border-radius: 8px;
     padding: 1.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: grid;
-    grid-template-rows: auto auto 1fr;
-    gap: 1rem;
+    display: block;
+    overflow: hidden;
+    /* grid-template-rows: auto auto 1fr;
+    gap: 1rem; */
 }
 
+.profile-pic {
+    float: right;
+    margin: 0 0 15px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+hr {
+    margin: 1.5rem 0;
+    border: 0;
+    border-top: 1px solid;
+}
+
+.flag-box {
+    float: left;
+    margin: 0 15px 15px 0;
+    text-align: center;
+}
+
+.flag-box img {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.flag-box figcaption {
+    font-size: 0.85rem;
+    margin-top: 5px;
+    color: var(--secondary-font-color);
+}
 
 .card h2 {
-    margin: 0;
+    background-color: var(--nav-background);
+    margin: 0 0 1rem 0;
+    padding: 1rem;
     font-size: 1.4rem;
-    color: var(--primary-color);
+    color: var(--primary-font-color);
     border-bottom: 1px solid #eeeeee;
     padding-bottom: 0.5rem;
     text-align: center;
 }
 
-.card img {
-    justify-self: center;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+.card p,
+.card ul,
+.card h3 {
+    padding: 0 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.card h3,
+hr {
+    clear: both;
+    /* location and horizontal line to be below the profile picture */
 }
 
 .card ul {
@@ -134,6 +173,10 @@ h1 {
 
 .card a:hover {
     text-decoration: underline;
+}
+
+.card p {
+    margin-bottom: 1rem;
 }
 
 /* footer */
