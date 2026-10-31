@@ -6,6 +6,7 @@
     --primary-font-color: #ffffff;
     --secondary-font-color: #1e293b;
     --nav-background: #1e3a8a;
+    --card-background-color: #fdfaf0;
 
     --primary-color: #003366;
     --secondary-color: #f4f4f4;
@@ -107,7 +108,7 @@ footer {
 }
 
 .card {
-    background-color: #fdfaf0;
+    background-color: var(--card-background-color);
     border: 1px solid #cccccc;
     border-radius: 8px;
     padding: 0;
@@ -129,6 +130,8 @@ footer {
 .card p {
     margin-bottom: 1rem;
     line-height: 1.5;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .card a {
