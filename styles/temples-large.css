@@ -43,12 +43,16 @@
 
     /* main album */
     main {
+        max-width: 1200px;
+        /* Centered bounding box wrapper per standards */
+        margin: 0 auto;
         padding: 2.5rem 2rem;
     }
 
     main h2 {
         font-size: 2rem;
         margin-bottom: 2rem;
+        text-align: center;
     }
 
     /* 
@@ -57,12 +61,23 @@
        without breaking image aspect ratios or causing horizontal scrolling.
     */
     .album-grid {
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* Forces exact 3x3 structure for 9 elements */
         gap: 2rem;
+        width: 100%;
     }
 
+        figure.card {
+            width: 100%;
+            /* Spans exactly to its grid track width limit */
+        }
+    
+
     figure.card img {
+        width: 100%;
         height: 220px;
         /* Adjusted height for optimal horizontal balance */
+        object-fit: cover;
     }
 }

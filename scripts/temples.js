@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 menuButton.setAttribute("aria-expanded", "true");
                 menuButton.setAttribute("aria-label", "Close navigation menu");
             } else {
-                menuButton.textContent = "☰"; // Standard 3-line hamburger character
+                menuButton.textContent = "☰"; // 3-line hamburger character
                 menuButton.setAttribute("aria-expanded", "false");
                 menuButton.setAttribute("aria-label", "Open navigation menu");
             }
