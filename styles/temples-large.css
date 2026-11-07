@@ -1,0 +1,68 @@
+@media (min-width: 760px) {
+
+    /* Header Layout Shifts */
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 2rem;
+    }
+
+    header h1 {
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    /* Hide the Hamburger on desktop */
+    #menuButton {
+        display: none;
+    }
+
+    /* Reset Navigation Container for Inline Desktop Layout */
+    nav {
+        width: auto;
+    }
+
+    nav ul.navigation {
+        display: flex;
+        /* Force clear the display:none mobile default */
+        flex-direction: row;
+        background-color: transparent;
+        margin-top: 0;
+        gap: 0.5rem;
+    }
+
+    nav ul.navigation li {
+        border-bottom: none;
+    }
+
+    nav a {
+        padding: 0.6rem 1.2rem;
+        border-radius: 4px;
+    }
+
+    /* main album */
+    main {
+        padding: 2.5rem 2rem;
+    }
+
+    main h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    /* 
+       Multi-column responsive grid workspace.
+       Uses minmax to dynamically arrange at least 3 columns on large screens 
+       without breaking image aspect ratios or causing horizontal scrolling.
+    */
+    .album-grid {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 2rem;
+    }
+
+    figure.card img {
+        height: 220px;
+        /* Adjusted height for optimal horizontal balance */
+    }
+}
