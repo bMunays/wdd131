@@ -1,0 +1,33 @@
+/* global variables */
+:root {
+    --font-size: 1.1rem;
+    --background-color: #111827;
+    /* Darker navy/slate for AA contrast clearance */
+    --main-background-color: #f1f5f9;
+    --primary-font-color: #ffffff;
+    --secondary-font-color: #1e293b;
+    --nav-background: #1e3a8a;
+    --card-background-color: #ffffff;
+
+    --primary-color: #003366;
+    --secondary-color: #f4f4f4;
+    --text-color: #1f2937;
+    --hover-color: #1d4ed8;
+    --heading-color: #0f172a;
+}
+
+/* reset base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--main-background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
