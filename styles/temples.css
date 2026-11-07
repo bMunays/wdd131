@@ -24,7 +24,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: var(--main-background-color);
     color: var(--text-color);
     display: flex;
@@ -42,7 +42,7 @@ header {
     align-items: flex-start; /* keep left aligned*/
 }
 
-header h1 {
+header .site-title {
     font-size: 1.8rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
@@ -121,7 +121,7 @@ main {
     flex-grow: 1;
 }
 
-main h2 {
+main h1 {
     text-align: center;
     color: var(--primary-color);
     margin-bottom: 1.5rem;

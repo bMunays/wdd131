@@ -8,7 +8,7 @@
         padding: 1.5rem 2rem;
     }
 
-    header h1 {
+    header .site-title {
         margin-bottom: 0;
         text-align: left;
     }
@@ -49,7 +49,7 @@
         padding: 2.5rem 2rem;
     }
 
-    main h2 {
+    main h1 {
         font-size: 2rem;
         margin-bottom: 2rem;
         text-align: center;
