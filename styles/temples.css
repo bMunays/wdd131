@@ -190,3 +190,10 @@ footer {
 footer p {
     margin: 0.25rem 0;
 }
+
+/* Medium screens (e.g., tablets) */
+@media (min-width: 500px) {
+    .album-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
