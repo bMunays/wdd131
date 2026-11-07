@@ -31,3 +31,162 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+
+header {
+    background-color: var(--background-color);
+    color: var(--primary-font-color);
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    color: var(--primary-font-color);
+}
+
+/* Hamburger Button */
+#menuButton {
+    background: none;
+    border: none;
+    color: var(--primary-font-color);
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    transition: transform 0.2s ease;
+}
+
+#menuButton:focus {
+    outline: 2px solid var(--primary-font-color);
+    border-radius: 4px;
+}
+
+/* navigation list */
+nav {
+    width: 100%;
+}
+
+nav ul.navigation {
+    display: none;
+    /* Hidden by default on mobile devices */
+    flex-direction: column;
+    list-style: none;
+    background-color: var(--nav-background);
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0;
+}
+
+/* applied by JavaScript */
+nav ul.navigation.open {
+    display: flex;
+}
+
+nav ul.navigation li {
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav ul.navigation li:last-child {
+    border-bottom: none;
+}
+
+nav a {
+    display: block;
+    color: var(--primary-font-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--hover-color);
+    color: var(--primary-font-color);
+}
+
+main {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+    flex-grow: 1;
+}
+
+main h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+}
+
+
+/* album grid */
+.album-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+/* figure and card */
+figure.card {
+    background-color: var(--card-background-color);
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    padding: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+figure.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Uniform, Responsive Image Control */
+figure.card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    /* Prevents squishing/stretching of temple imagery */
+    display: block;
+}
+
+/* caption */
+figcaption {
+    width: 100%;
+    background-color: var(--background-color);
+    color: var(--primary-font-color);
+    padding: 0.85rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* footer */
+footer {
+    background-color: var(--background-color);
+    color: var(--primary-font-color);
+    text-align: center;
+    padding: 1.5rem;
+    font-size: var(--font-size);
+    margin-top: auto;
+    line-height: 1.6;
+    border-top: 4px solid var(--nav-background);
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
