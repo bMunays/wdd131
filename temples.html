@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album | WDD 131</title>
+    <meta name="description" content="A clean responsive picture album showcase presenting historical and modern LDS temples, built with accessible mobile first principles.">
+    <meta name="author" content="Brighton Munezi">
+
+    <!-- Links to stylesheets-->
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <!-- Link to JavaScipt-->
+     <script src="scripts/temples.js" defer></script>
+
+</head>
+<body>
+    <!-- header -->
+     <header>
+        <h1>Temple Album</h1>
+        <button id="menuButton" aria-expanded="false" aria-label="Open navigation menu">☰</button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" class="active"></a>Home</li>
+                <li><a href="#">Old</a>Home</li>
+                <li><a href="#">Old</a>New</li>
+                <li><a href="#">Old</a>Large</li>
+                <li><a href="#">Old</a>Small</li>
+            </ul>
+        </nav>
+     </header>
+
+     <!-- Main-->
+      <main>
+        <div class="album grid">
+            <!-- Card object components-->
+            <!-- 01 -->
+            <figure class="card">
+                <img src="images/san-diego.webp"
+                    alt="The brilliant white spires of the San Diego California Temple set against blue skies." loading="lazy"
+                    width="400" height="240">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+        
+            <!-- 02 -->
+            <figure class="card">
+                <img src="images/salt-lake.webp" alt="" loading="lazy" width="400" height="240">
+                <figcaption>Salt Lake Utah</figcaption>
+            </figure>
+        
+            <!-- 03 -->
+            <figure class="card">
+                <img src="images/paris-france.webp" alt="" loading="lazy" width="400" height="240">
+                <figcaption>Paris France</figcaption>
+            </figure>
+        
+            <!-- 04 -->
+            <figure class="card">
+                <img src="images/aba-nigeria.webp" alt="" loading="lazy" width="400" height="240">
+                <figcaption>Aba Nigeria</figcaption>
+            </figure>
+        
+            <!-- 05 -->
+            <figure class="card">
+                <img src="images/tokyo-japan.webp" alt="" loading="lazy" width="400" height="240">
+                <figcaption>Tokyo Japan</figcaption>
+            </figure>
+        
+            <!-- 06 -->
+            <figure class="card">
+                <img src="images/rome-italy.webp" alt="" loading="lazy" width="400" height="240">
+                <figcaption>Rome Italy</figcaption>
+            </figure>
+        
+            <!-- 07 -->
+            <figure class="card">
+                <img src="images/johannesburg.webp" alt="" loading="lazy" width="400" height="240">
+                <figcaption>Johannesburg South Africa</figcaption>
+            </figure>
+        
+            <!-- 08 -->
+            <figure class="card">
+                <img src="images/sydney-australia.webp" alt="" loading="lazy" width="400" height="240">
+                <figcaption>Sydney Australia</figcaption>
+            </figure>
+        
+            <!-- 09 -->
+            <figure class="card">
+                <img src="images/frankfurt-germany.webp" alt="" loading="lazy" width="400" height="240">
+                <figcaption>Frankfurt German</figcaption>
+            </figure>
+        
+            <!-- 10 -->
+            <figure class="card">
+                <img src="images/san-diego.webp" alt="" loading="lazy" width="400" height="240">
+                <figcaption></figcaption>
+            </figure>
+        
+            <!-- 11 -->
+            <figure class="card">
+                <img src="images/san-diego.webp" alt="" loading="lazy" width="400" height="240">
+                <figcaption></figcaption>
+            </figure>
+        </div>
+      </main>
+
+      <footer>
+        <p>&copy; <span id="currentYear"></span>| Brighton Munezi | Mutare, Zimbabwe</p>
+      </footer>
+    
+</body>
+</html>
