@@ -107,12 +107,6 @@ footer {
     margin-top: auto;
 }
 
-span.tooltip-text-content {
-    background-color: var(--background-color);
-    color: var(--primary-font-color);
-    /* Ensures the background is dark */
-}
-
 .card {
     background-color: var(--card-background-color);
     border: 1px solid #cccccc;
@@ -215,4 +209,3 @@ hr {
 .card li {
     margin-bottom: 0.5rem;
 }
-
