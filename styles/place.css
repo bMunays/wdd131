@@ -1,0 +1,145 @@
+/* Use the :root{} to define global variables */
+:root {
+    --primary-color: #004d00;
+    /* contrast ratio > 7:1 against white */
+    --bg-color: #f5f5f5;
+    --card-bg: rgba(255, 255, 255, 0.95);
+    --text-color: #222222;
+    /* contrast ratio > 10:1 against white */
+    --white: #ffffff;
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Header and Footer */
+header,
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+/* Mobile View Defaults (Stacked Layout) */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-image {
+    width: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.data-card,
+.weather-card {
+    background-color: var(--card-bg);
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    width: 85%;
+    max-width: 450px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.weather-icon-mobile {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Wider View Layout (CSS Grid) */
+@media (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .hero-image {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+        /* Image spans the entire grid area */
+        z-index: 1;
+    }
+
+    .hero-image img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Floating Data Card Overlay */
+    .data-card {
+        grid-column: 1 / 2;
+        grid-row: 1;
+        z-index: 2;
+        align-self: start;
+        justify-self: start;
+        margin: 2rem;
+    }
+
+    /* Floating Weather Card Overlay */
+    .weather-card {
+        grid-column: 2 / 3;
+        grid-row: 1;
+        z-index: 2;
+        align-self: end;
+        justify-self: end;
+        margin: 2rem;
+    }
+
+    .weather-icon-mobile {
+        display: none;
+        /* Hide SVG in wider view */
+    }
+
+    /* Pseudo-Element Emoticon in wider view */
+    .weather-heading::after {
+        content: " ☀️";
+        font-size: 1.5rem;
+        margin-left: 0.5rem;
+    }
+}

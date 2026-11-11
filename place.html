@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zimbabwe | Country Profile</title>
+    <meta name="description" content="Data and current weather information for Zimbabwe.">
+    <meta name="author" content="Brighton Munezi">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <!-- Exactly one <h1> heading accurately representing the page's main topic -->
+        <h1>Zimbabwe</h1>
+    </header>
+    <main>
+        <!-- Hero Image Swap with srcset and WebP format -->
+        <picture class="hero-image">
+            <source media="(min-width: 768px)" srcset="images/zimbabwe-large.webp">
+            <img src="images/zimbabwe-small.webp" alt="A beautiful landscape in Zimbabwe" width="800" height="600">
+        </picture>
+
+        <section class="data-card">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 390,757 sq km</li>
+                <li><strong>Population:</strong> 16,320,000</li>
+                <li><strong>Capital:</strong> Harare</li>
+                <li><strong>Languages:</strong> English, Shona, Ndebele</li>
+                <li><strong>Currency:</strong> Zimbabwean Dollar / USD</li>
+                <li><strong>Time Zone:</strong> UTC+2</li>
+                <li><strong>Calling Code:</strong> +263</li>
+                <li><strong>Internet TLD:</strong> .zw</li>
+            </ul>
+        </section>
+
+        <section class="weather-card">
+            <h2 class="weather-heading">Weather</h2>
+            <!-- SVG weather icon for mobile view only -->
+            <div class="weather-icon-mobile">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="64" height="64">
+                    <path fill="#006400"
+                        d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75zM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0zM18.856 5.144a.75.75 0 0 0-1.06 1.06l1.591 1.59a.75.75 0 1 0 1.06-1.06l-1.59-1.59zM21 11.25a.75.75 0 0 1 0 1.5h-2.25a.75.75 0 0 1 0-1.5H21zM17.796 17.796a.75.75 0 0 0 1.06 1.06l1.59-1.591a.75.75 0 1 0-1.06-1.06l-1.59 1.59zM12 18.75a.75.75 0 0 1 .75.75V21.75a.75.75 0 0 1-1.5 0V19.5a.75.75 0 0 1 .75-.75zM5.144 18.856a.75.75 0 0 1 1.06-1.06l1.591 1.59a.75.75 0 1 1-1.06 1.06l-1.59-1.59zM3 12.75a.75.75 0 0 1 0-1.5h2.25a.75.75 0 0 1 0 1.5H3zM6.204 6.204a.75.75 0 0 1-1.06-1.06l1.59-1.591a.75.75 0 0 1 1.06 1.06l-1.59 1.59z" />
+                </svg>
+            </div>
+            <ul>
+                <li><strong>Temperature:</strong> <span id="temp">10</span>°C</li>
+                <li><strong>Conditions:</strong> Sunny</li>
+                <li><strong>Wind:</strong> <span id="wind">15</span> km/h</li>
+                <li><strong>Wind Chill:</strong> <span id="windchill"></span></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <!-- Footer includes standard copyright, name, location, and dynamic modified date -->
+        <p>&copy; <span id="currentyear"></span> ❖ Brighton Munezi ❖ Zimbabwe</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
