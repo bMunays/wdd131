@@ -14,7 +14,7 @@
 
 <body>
     <header>
-        <!-- Exactly one <h1> heading accurately representing the page's main topic -->
+        <!-- Only one <h1> heading accurately representing the page's main topic -->
         <h1>Zimbabwe</h1>
     </header>
     <main>
@@ -25,6 +25,11 @@
         </picture>
 
         <section class="data-card">
+            <!-- 
+              Country Data Source: 
+              The area (390,757 sq km), population, and other country statistics for Zimbabwe 
+              were sourced from Wikipedia. 
+            -->
             <h2>Data</h2>
             <ul>
                 <li><strong>Area:</strong> 390,757 sq km</li>
@@ -40,13 +45,24 @@
 
         <section class="weather-card">
             <h2 class="weather-heading">Weather</h2>
-            <!-- SVG weather icon for mobile view only -->
+            <!-- SVG weather icon for mobile view only
+              SVG Icon Source: 
+              The SVG weather icon (sun/clear conditions) for the mobile view was 
+              obtained from Google Fonts Icons (Material Symbols). 
+            -->
             <div class="weather-icon-mobile">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="64" height="64">
                     <path fill="#006400"
                         d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75zM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0zM18.856 5.144a.75.75 0 0 0-1.06 1.06l1.591 1.59a.75.75 0 1 0 1.06-1.06l-1.59-1.59zM21 11.25a.75.75 0 0 1 0 1.5h-2.25a.75.75 0 0 1 0-1.5H21zM17.796 17.796a.75.75 0 0 0 1.06 1.06l1.59-1.591a.75.75 0 1 0-1.06-1.06l-1.59 1.59zM12 18.75a.75.75 0 0 1 .75.75V21.75a.75.75 0 0 1-1.5 0V19.5a.75.75 0 0 1 .75-.75zM5.144 18.856a.75.75 0 0 1 1.06-1.06l1.591 1.59a.75.75 0 1 1-1.06 1.06l-1.59-1.59zM3 12.75a.75.75 0 0 1 0-1.5h2.25a.75.75 0 0 1 0 1.5H3zM6.204 6.204a.75.75 0 0 1-1.06-1.06l1.59-1.591a.75.75 0 0 1 1.06 1.06l-1.59 1.59z" />
                 </svg>
             </div>
+
+            <!-- 
+              Weather Data Source: 
+              The current weather values (Temperature: 10°C, Wind: 15 km/h) are static inputs 
+              hardcoded to just fulfill the current assignment's preparation for dynamic data. 
+              I did not use real-time weather data.
+            -->
             <ul>
                 <li><strong>Temperature:</strong> <span id="temp">10</span>°C</li>
                 <li><strong>Conditions:</strong> Sunny</li>
