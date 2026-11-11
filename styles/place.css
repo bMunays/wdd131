@@ -8,6 +8,12 @@
     /* contrast ratio > 10:1 against white */
     --white: #ffffff;
     --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* Zimbabwe Flag Colors */
+    --zim-green: #31924a;
+    --zim-yellow: #ffd200;
+    --zim-red: #de201e;
+    --zim-black: #000000;
 }
 
 body {
@@ -30,6 +36,23 @@ footer {
 header h1 {
     margin: 0;
     font-size: 2.2rem;
+}
+
+/* Decorative Flag Stripes */
+.flag-stripes {
+    height: 14px;
+    /* Subtle but distinctly visible */
+    width: 100%;
+    background: linear-gradient(to bottom,
+            var(--zim-green) 0% 14.3%,
+            var(--zim-yellow) 14.3% 28.6%,
+            var(--zim-red) 28.6% 42.9%,
+            var(--zim-black) 42.9% 57.2%,
+            var(--zim-red) 57.2% 71.5%,
+            var(--zim-yellow) 71.5% 85.8%,
+            var(--zim-green) 85.8% 100%);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    /* Adds tiny separation */
 }
 
 /* Mobile View Defaults (Stacked Layout) */
