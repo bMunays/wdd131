@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
         dedicated: "2026, March, 1",
         area: 17250,
         imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/harare-zimbabwe-temple/harare-zimbabwe-temple-67717-main.jpg"
+        "https://churchofjesuschristtemples.org/assets/img/temples/harare-zimbabwe-temple/harare-zimbabwe-temple-67717-main.jpg"
     },
     {
         templeName: "Johannesburg South Africa",

@@ -142,12 +142,14 @@ figure.card {
     background-color: var(--card-background-color);
     border: 1px solid #cbd5e1;
     border-radius: 6px;
-    padding: 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    overflow: hidden;
+    padding: 1.5;
+    box-shadow: none; 
+    /* 0 4px 6px rgba(0, 0, 0, 0.05); */
+    /* overflow: hidden; */
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -183,21 +185,10 @@ figure.card img {
     object-fit: cover;
     /* Prevents squishing/stretching of temple imagery */
     display: block;
-    margin-top: 1rem;
+    margin-top: 1.25rem;
     border-radius: 4px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
 }
-
-/* caption */
-/* figcaption {
-    width: 100%;
-    background-color: var(--background-color);
-    color: var(--primary-font-color);
-    padding: 0.85rem;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 600;
-} */
 
 /* footer */
 footer {
