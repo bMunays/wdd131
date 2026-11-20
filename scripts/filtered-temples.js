@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    // temple array
     const temples = [
     {
         templeName: "Aba Nigeria",
@@ -96,6 +97,131 @@ document.addEventListener("DOMContentLoaded", () => {
         imageUrl:
         "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
-  // Add more temple objects here...
-];
+    // 3 more temple objects added
+    {
+        templeName: "Harare Zimbabwe",
+        location: "Harare, Zimbabwe",
+        dedicated: "2026, March, 1",
+        area: 17250,
+        imageUrl:
+        "https://churchofjesuschristtemples.org/assets/img/temples/harare-zimbabwe-temple/harare-zimbabwe-temple-68553-main.jpg"
+    },
+    {
+        templeName: "Johannesburg South Africa",
+        location: "Johannesburg, South Africa",
+        dedicated: "1985, August, 24",
+        area: 19184,
+        imageUrl:
+        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/400x250/johannesburg-south-africa-temple-lds-83166-wallpaper.jpg"
+    },
+    {
+        templeName: "Salt Lake",
+        location: "Salt Lake City, Utah, United States",
+        dedicated: "1893, April, 6",
+        area: 382207,
+        imageUrl:
+        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/400x250/salt-lake-temple-37762.jpg"
+    }
+    ];
+    
+    const albumGrid = document.querySelector(".album-grid");
+    const pageTitle = document.getElementById("pageTitle");
+    const navLinks = document.querySelectorAll(".navigation a");
+
+    /* Render Temple Cards */
+    function displayTemples(filteredTemples) {
+        if (!albumGrid) return;
+        albumGrid.innerHTML = "";
+
+        filteredTemples.forEach((temple) => {
+            const card = document.createElement("figure");
+            card.classList.add("card");
+
+            const name = document.createElement("h2");
+            name.textContent = temple.templeName;
+
+            const location = document.createElement("p");
+            location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
+
+            const dedicated = document.createElement("p");
+            dedicated.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
+
+            const area = document.createElement("p");
+            area.innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
+
+            const img = document.createElement("img");
+            img.src = temple.imageUrl;
+            img.alt = `${temple.templeName} Temple`;
+            img.loading = "lazy";
+            img.width = 400;
+            img.height = 250;
+
+            card.appendChild(name);
+            card.appendChild(location);
+            card.appendChild(dedicated);
+            card.appendChild(area);
+            card.appendChild(img);
+
+            albumGrid.appendChild(card);
+        });
+    }
+
+    /* Helper to manage active link styling and mobile menu state */
+    function setActiveLink(activeElement, titleText) {
+        navLinks.forEach((link) => link.classList.remove("active"));
+        activeElement.classList.add("active");
+        if (pageTitle) {
+            pageTitle.textContent = titleText;
+        }
+        if (navigationList && navigationList.classList.contains("open")) {
+            navigationList.classList.remove("open");
+            menuButton.textContent = "☰";
+            menuButton.setAttribute("aria-expanded", "false");
+            menuButton.setAttribute("aria-label", "Open navigation menu");
+        }
+    }
+
+    /* Navigation Filter Listeners */
+    document.getElementById("home").addEventListener("click", (e) => {
+        e.preventDefault();
+        setActiveLink(e.currentTarget, "Home");
+        displayTemples(temples);
+    });
+
+    document.getElementById("old").addEventListener("click", (e) => {
+        e.preventDefault();
+        setActiveLink(e.currentTarget, "Old");
+        const oldTemples = temples.filter((temple) => {
+            const year = parseInt(temple.dedicated.split(",")[0], 10);
+            return year < 1900;
+        });
+        displayTemples(oldTemples);
+    });
+
+    document.getElementById("new").addEventListener("click", (e) => {
+        e.preventDefault();
+        setActiveLink(e.currentTarget, "New");
+        const newTemples = temples.filter((temple) => {
+            const year = parseInt(temple.dedicated.split(",")[0], 10);
+            return year > 2000;
+        });
+        displayTemples(newTemples);
+    });
+
+    document.getElementById("large").addEventListener("click", (e) => {
+        e.preventDefault();
+        setActiveLink(e.currentTarget, "Large");
+        const largeTemples = temples.filter((temple) => temple.area > 90000);
+        displayTemples(largeTemples);
+    });
+
+    document.getElementById("small").addEventListener("click", (e) => {
+        e.preventDefault();
+        setActiveLink(e.currentTarget, "Small");
+        const smallTemples = temples.filter((temple) => temple.area < 10000);
+        displayTemples(smallTemples);
+    });
+
+    /* Initial Load */
+    displayTemples(temples);    
 });
