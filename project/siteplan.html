@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="WDD 131 Website Project Site Plan for SignalPro Satellite & Decoders: site name, purpose, scenarios, WCAG AAA color schema, typography, and mobile/desktop wireframes.">
+    <title>Site Plan | SignalPro Satellite &amp; Decoders</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand-lockup">
+                <img src="images/logo.webp" alt="SignalPro Satellite &amp; Decoders Logo" width="56" height="56">
+                <div>
+                    <p class="eyebrow">WDD 131 &bull; W05 Website Planning Document</p>
+                    <h1>SignalPro Satellite &amp; Decoders</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- 1. SITE NAME -->
+        <section id="site-name" class="plan-card">
+            <h2>1. Site Name</h2>
+            <p>
+                <strong>Selected Site Name:</strong> SignalPro Satellite &amp; Decoders
+            </p>
+            <p>
+                <strong>Reason for Selection:</strong> The name clearly communicates the two core pillars of the
+                business—reliable satellite television signal installations (<em>SignalPro</em>) and hardware retail
+                covering decoders and accessories (<em>Satellite &amp; Decoders</em>). It is memorable, builds immediate
+                technical trust with home and commercial customers, and scales cleanly across web headers, social media,
+                and WhatsApp Business profiles.
+            </p>
+        </section>
+
+        <!-- 2. SITE PURPOSE -->
+        <section id="site-purpose" class="plan-card">
+            <h2>2. Site Purpose</h2>
+            <p>
+                The purpose of <strong>SignalPro Satellite &amp; Decoders</strong> is to provide a centralized,
+                mobile-friendly digital storefront and service hub for customers seeking satellite television equipment
+                and installation support. Specifically, the website will:
+            </p>
+            <ul>
+                <li>
+                    <strong>Showcase Categorized Hardware:</strong> Display available decoders (DStv, Moreplex, Azam,
+                    and IKS receivers) and compatible accessories (4G LTE USB dongles, universal and brand replacement
+                    remotes, LNBs, and HDMI cables) in interactive, filterable product cards with clear pricing and
+                    specifications.
+                </li>
+                <li>
+                    <strong>Facilitate Installation Bookings:</strong> Outline professional satellite dish mounting,
+                    signal alignment, and multi-room setup packages alongside an online request form.
+                </li>
+            </ul>
+        </section>
+
+        <!-- 3. SCENARIOS -->
+        <section id="scenarios" class="plan-card">
+            <h2>3. Target Audience Scenarios</h2>
+            <p>
+                The following visitor scenarios represent real questions asked by prospective hardware buyers and
+                installation clients, guiding the content and interactive controls across the site:
+            </p>
+            <ul>
+                <li>
+                    <strong>Scenario 1 (Decoder Comparison &amp; Pricing):</strong> &ldquo;Which HD decoders do you
+                    currently have in stock across DStv, Moreplex, Azam, and IKS, and how much does each unit
+                    cost?&rdquo;
+                </li>
+                <li>
+                    <strong>Scenario 2 (Accessory Compatibility):</strong> &ldquo;Do you sell 4G LTE USB dongles and
+                    replacement remote controllers that work with my existing IKS or DStv decoder?&rdquo;
+                </li>
+                <li>
+                    <strong>Scenario 3 (Installation Booking):</strong> &ldquo;Can I book a technician to mount a new
+                    satellite dish and align my signal at home, and what does the service include?&rdquo;
+                </li>
+                <li>
+                    <strong>Scenario 4 (Payment &amp; Dispatch):</strong> &ldquo;Can I pay for my decoder online using
+                    EcoCash or Paynow, or confirm my order directly on WhatsApp Business before delivery?&rdquo;
+                </li>
+            </ul>
+        </section>
+
+        <!-- 4. COLOR SCHEMA -->
+        <section id="color-schema" class="plan-card">
+            <h2>4. Color Schema &amp; Accessibility Contrast</h2>
+            <p>
+                This palette balances technical authority with clean, high-legibility contrast. Every foreground and
+                background pairing has been verified against <strong>WCAG 2.1 Level AAA</strong> standards (&ge; 7.0:1
+                contrast ratio) and is actively applied throughout this planning document.
+            </p>
+            <div class="swatch-grid">
+                <article class="swatch-card">
+                    <div class="swatch-preview swatch-primary">
+                        <span>#0B1F3A</span>
+                        <small>16.52:1 Contrast (AAA)</small>
+                    </div>
+                    <div class="swatch-body">
+                        <h3>Primary: Deep Signal Navy</h3>
+                        <p><strong>Usage:</strong> Site header, footer, primary headings (<code>&lt;h1&gt;</code>,
+                            <code>&lt;h2&gt;</code>), and primary action buttons.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="swatch-card">
+                    <div class="swatch-preview swatch-secondary">
+                        <span>#0E4D64</span>
+                        <small>9.27:1 Contrast (AAA)</small>
+                    </div>
+                    <div class="swatch-body">
+                        <h3>Secondary: Satellite Teal</h3>
+                        <p><strong>Usage:</strong> Subheadings (<code>&lt;h3&gt;</code>), active category filter
+                            buttons, logo
+                            badge, and section accents.</p>
+                    </div>
+                </article>
+
+                <article class="swatch-card">
+                    <div class="swatch-preview swatch-accent">
+                        <span>#9A3412</span>
+                        <small>7.31:1 Contrast (AAA)</small>
+                    </div>
+                    <div class="swatch-body">
+                        <h3>Accent: High-Contrast Rust</h3>
+                        <p><strong>Usage:</strong> Price highlights, category badges, call-to-action highlights, and
+                            interactive
+                            focus borders.</p>
+                    </div>
+                </article>
+
+                <article class="swatch-card">
+                    <div class="swatch-preview swatch-bg">
+                        <span>#F8FAFC / #FFFFFF</span>
+                        <small>14.63:1 w/ #1E293B (AAA)</small>
+                    </div>
+                    <div class="swatch-body">
+                        <h3>Neutrals: Off-White &amp; Charcoal</h3>
+                        <p><strong>Usage:</strong> <code>#F8FAFC</code> page canvas, <code>#FFFFFF</code> content cards,
+                            and
+                            <code>#1E293B</code> charcoal body text.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 5. TYPOGRAPHY -->
+        <section id="typography" class="plan-card">
+            <h2>5. Typography</h2>
+            <p>
+                Two complementary Google Fonts are paired for crisp hierarchy across mobile and desktop screens, and
+                both are loaded and applied directly on this document:
+            </p>
+            <div class="type-grid">
+                <article class="type-sample">
+                    <span class="type-badge">Heading Font</span>
+                    <h3 class="font-heading-demo">Montserrat (Weights: 600, 700)</h3>
+                    <p>
+                        <strong>Applied To:</strong> Site brand title, navigation links, section headings
+                        (<code>&lt;h1&gt;</code>&ndash;<code>&lt;h3&gt;</code>), product card titles, and button labels.
+                    </p>
+                    <p class="specimen-heading">ABCDEFGHIJKLMNOPQRSTUVWXYZ &bull; 0123456789</p>
+                </article>
+
+                <article class="type-sample">
+                    <span class="type-badge">Body Font</span>
+                    <h3 class="font-body-demo">Open Sans (Weights: 400, 600)</h3>
+                    <p>
+                        <strong>Applied To:</strong> Body paragraphs, product descriptions, technical specifications,
+                        scenario
+                        lists, form labels, and footer text.
+                    </p>
+                    <p class="specimen-body">Clean, high x-height letterforms ensure effortless reading on mobile
+                        screens.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- 6. WIREFRAMES -->
+        <section id="wireframes" class="plan-card">
+            <h2>6. Home Page Wireframes (Mobile &amp; Desktop Views)</h2>
+            <p>
+                The wireframes below illustrate the responsive layout structure for the home page
+                (<code>index.html</code>) across mobile (375px) and desktop (1200px+) viewports.
+            </p>
+
+            <img src="images/phone.webp" alt="Mobile view wireframe for SignalPro home page" loading="lazy">
+            <img src="images/desktop.webp" alt="Desktop view wireframe for SignalPro home page" loading="lazy">
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 SignalPro Satellite &amp; Decoders &bull; WDD 131 Project Site Plan</p>
+        </div>
+    </footer>
+</body>
+
+</html>
