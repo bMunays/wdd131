@@ -8,7 +8,7 @@
     --text-main: #0f172a;
     --text-muted: #475569;
     --border-color: #cbd5e1;
-    --required-color: #b91c1c;
+    --required-color: darkblue;
 }
 
 * {
@@ -64,7 +64,7 @@ main {
 
 .required-mark {
     color: var(--required-color);
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .optional-tag {
