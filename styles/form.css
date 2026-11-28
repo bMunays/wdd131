@@ -204,3 +204,22 @@ footer p {
     font-size: 0.9rem;
     margin: 0.25rem 0;
 }
+
+@media (min-width: 768px) {
+    main {
+        max-width: 768px;
+        margin: 2.5rem auto;
+    }
+
+    .review-form,
+    .confirmation-card {
+        padding: 2.5rem;
+    }
+
+    /* Arrange checkboxes in a 2-column grid */
+    .checkbox-group {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem 1.5rem;
+    }
+}
